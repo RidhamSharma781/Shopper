@@ -249,6 +249,14 @@ app.get('/popular',async (req,res)=>{
      res.send("Removed");
  }) 
 
+ // Creating API for loading cartData on login
+ app.post('/getcart',fetchUser,async(req,res)=>{
+    console.log("Get Cart")
+    let userData = await Users.findOne({_id:req.user.id});
+    res.json(userData.cartData);
+
+ })
+
 app.listen(port, (error) => {
     if (!error) {
         console.log(`Server running on port : ${port}`);
