@@ -14,7 +14,7 @@ Shopper is a modern and fully responsive e-commerce platform for clothing, built
 
 ## Demo
 
-You can check out a live demo of the application [here](#).
+You can check out a live demo of the application [here](https://shopper-ridham.netlify.app).
 
 ## Technologies Used
 
